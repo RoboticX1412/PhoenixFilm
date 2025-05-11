@@ -1,0 +1,88 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-image: url('SpaceBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    padding: 50px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.form-container {
+    max-width: 550px;
+    width: 100%;
+    background: #000000;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}g
+.form-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fd0000;
+    text-align: flex-start;
+    margin-bottom: 30px;
+}
+.input-title {
+    font-size: 18px;
+    color: #ffffffc0;
+    text-align: flex-start;
+    margin-bottom: 10px;
+}
+.form-container input,
+.form-container select {
+    width: 93%;
+    padding: 16px 15px;
+    font-size: 15px;
+    border: 3px solid #d3d3d3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.form-container input:focus,
+.form-container select:focus {
+    box-shadow: 0 0 8px rgba(255, 107, 107, 0.3);
+    outline: none;
+}
+.form-container select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23ff6b6b' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 18px;
+}
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007ACC;
+    border: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+.submit-btn:hover {
+    background-color: #5CD5FF;
+}
+.submit-quick {
+    width: 49%;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    border: 5px solid #d3d3d3;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+.submit-quick:hover {
+    color: #000000;
+    background-color: #c5c5c5;
+    border: 5px solid #343434;
+}
