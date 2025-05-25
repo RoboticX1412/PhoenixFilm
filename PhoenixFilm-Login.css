@@ -6,7 +6,7 @@ body {
     background-position: center; 
     padding: 50px 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .form-container {
     max-width: 550px;
@@ -15,15 +15,22 @@ body {
     padding: 30px 40px;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}g
+}
 .form-title {
     font-size: 32px;
     font-weight: 600;
-    color: #fd0000;
+    color: white;
     text-align: flex-start;
     margin-bottom: 30px;
 }
 .input-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    text-align: flex-start;
+    margin-bottom: 30px;
+}
+.form-floating {
     font-size: 18px;
     color: #ffffffc0;
     text-align: flex-start;
@@ -31,7 +38,7 @@ body {
 }
 .form-container input,
 .form-container select {
-    width: 93%;
+    width: 100%;
     padding: 16px 15px;
     font-size: 15px;
     border: 3px solid #d3d3d3;
