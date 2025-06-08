@@ -9,9 +9,9 @@ body {
 .movie-section {
   padding: 20px;
 }
-.movie-section h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 .movie-carousel {
   display: flex;
@@ -38,7 +38,7 @@ body {
   left: 8px;
   background-color: #a57248;
   color: white;
-  font-size: 13px;
+  font-size: 10px;
   padding: 3px 8px;
   border-radius: 4px;
   z-index: 2;
@@ -69,8 +69,73 @@ body {
   z-index: 3;
 }
 .arrow.left {
-  left: 15;
+  left: 0;
 }
 .arrow.right {
   right: 0;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.movies {
+  flex: 3;
+}
+
+.trending {
+  flex: 1;
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.episode-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #a25bff;
+  color: white;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.trending h3 {
+  margin-top: 0;
+  font-size: 18px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.trending ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.trending li {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.trending li span {
+  color: #ff9933;
+  font-weight: bold;
+  margin-right: 6px;
 }
