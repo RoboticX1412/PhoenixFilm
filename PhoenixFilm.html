@@ -1,438 +1,658 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="PhoenixWebLogo.png" type="image/x-icon"/>
-    <title>
-      PhoenixFilm | Phim Hay | Phim Mới | Phim HD Vietsub | Xem Phim Online
-    </title>
-    <meta
-      name="description"
-      content="PhoenixFilm - Trang web xem phim trực tuyến, Vietsub miễn phí với giao diện thân thiện, luôn cập nhật phim nhanh nhất, phim chiếu rạp, phim bộ Trung Quốc, phim Hàn Quốc."
-    />
-    <meta
-      name="keywords"
-      content="Xem phim trực tuyến, phim hay, xem phim, xem phim trực tuyến, xem phim nhanh, phim trực tuyến, xem phim hd, phim vietsub, phim lồng tiếng, phim engsub, PhoenixFilm, phim truyền hình Trung Quốc, phim truyền hình Hàn Quốc"
-    />
-  
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="PhoenixFilm.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="PhoenixWebLogo.png" type="image/x-icon" />
+  <title>PhoenixFilm | Phim Hay | Phim Mới | Phim HD Vietsub | Xem Phim Online</title>
+  <meta name="description"
+    content="PhoenixFilm - Trang web xem phim trực tuyến, Vietsub miễn phí với giao diện thân thiện, luôn cập nhật phim nhanh nhất, phim chiếu rạp, phim bộ Trung Quốc, phim Hàn Quốc." />
+  <meta name="keywords"
+    content="Xem phim trực tuyến, phim hay, xem phim, xem phim trực tuyến, xem phim nhanh, phim trực tuyến, xem phim hd, phim vietsub, phim lồng tiếng, phim engsub, PhoenixFilm, phim truyền hình Trung Quốc, phim truyền hình Hàn Quốc" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="PhoenixFilm.css" />
+</head>
+
 <body>
-  <nav class="navbar navbar-expand-lg"> 
-    <div class="container-fluid"> 
-    <img src="PhoenixFilmLogo.png" alt="" width="150"/>
-      <button 
-      class="navbar-toggler" 
-      type="button" 
-      data-bs-toggle="collapse" 
-      data-bs-target="#navbarSupportedContent" 
-      aria-controls="navbarSupportedContent" 
-      aria-expanded="false" 
-      aria-label="Toggle navigation" 
-      > 
-      <span class="navbar-toggler-icon"></span> 
-    </button> 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
-            <li class="nav-item"> 
-              <a class="nav-link active" aria-current="page" href="#">PHIMMOI</a> 
-            </li> 
-            <li class="nav-item"> 
-              <a class="nav-link active" aria-current="page" href="#">PHIM LẺ</a> 
-            </li> 
-            <li class="nav-item"> 
-              <a class="nav-link active" aria-current="page" href="#">PHIM BỘ</a> 
-            </li> 
-            <li class="nav-item"> 
-              <a class="nav-link active" aria-current="page" href="#">PHIM CHIẾU RẠP</a> 
-            </li> 
-            <li class="nav-item dropdown"> 
-              <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false" 
-              > 
-              THỂ LOẠI
-            </a> 
-            <ul class="dropdown-menu"> 
-              <li><a class="dropdown-item" href="#">Viến tưởng</a></li>
-              <li><a class="dropdown-item" href="#">Chiến tranh</a></li>
-              <li><a class="dropdown-item" href="#">Cổ trang</a></li>
-              <li><a class="dropdown-item" href="#">Phiêu lưu</a></li>
-              <li><a class="dropdown-item" href="#">Hài kịch</a></li>
-              <li><a class="dropdown-item" href="#">Tội phạm</a></li>
-              <li><a class="dropdown-item" href="#">Khoa học</a></li>
-              <li><a class="dropdown-item" href="#">Lịch sử</a></li>
-              <li><a class="dropdown-item" href="#">Hành động</a></li>
-              <li><a class="dropdown-item" href="#">Kinh dị</a></li>
-              <li><a class="dropdown-item" href="#">Lãng mạn</a></li>
-              <li><a class="dropdown-item" href="#">Tài liệu</a></li>
-              <li><a class="dropdown-item" href="#">Thể thao</a></li>
-              <li><a class="dropdown-item" href="#">Hành động</a></li>
-              <li><a class="dropdown-item" href="#">Võ thuật</a></li>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="PhoenixFilmLogo.png" alt="PhoenixFilm Logo" width="150" height="auto" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> TRANG CHỦ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-film"></i> PHIM LẺ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-tv"></i> PHIM BỘ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-video"></i> PHIM CHIẾU RẠP</a>
+          </li>
+
+          <!-- Genre Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-list"></i> THỂ LOẠI
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="fas fa-magic"></i> Viễn tưởng</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-bomb"></i> Chiến tranh</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-crown"></i> Cổ trang</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-mountain"></i> Phiêu lưu</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-laugh"></i> Hài kịch</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-mask"></i> Tội phạm</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-robot"></i> Khoa học</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-scroll"></i> Lịch sử</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-fist-raised"></i> Hành động</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-ghost"></i> Kinh dị</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-heart"></i> Lãng mạn</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-file-alt"></i> Tài liệu</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-running"></i> Thể thao</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-hand-rock"></i> Võ thuật</a></li>
             </ul>
-            <li class="nav-item dropdown">
-              <a
-              class="nav-link dropdown-toggle"href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              >
-              QUỐC GIA
-            </a><ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Âu Mỹ</a></li>
-              <li><a class="dropdown-item" href="#">Hàn Quốc</a></li>
-              <li><a class="dropdown-item" href="#">Việt Nam</a></li>
-              <li><a class="dropdown-item" href="#">Anh</a></li>
-              <li><a class="dropdown-item" href="#">Canada</a></li>
-              <li><a class="dropdown-item" href="#">Nga</a></li>
-              <li><a class="dropdown-item" href="#">Pháp</a></li>
-              <li><a class="dropdown-item" href="#">Hồng Kông</a></li>
-              <li><a class="dropdown-item" href="#">Nhật Bản</a></li>
-              <li><a class="dropdown-item" href="#">Ý</a></li>
-              <li><a class="dropdown-item" href="#">Trung Quốc</a></li>
-              <li><a class="dropdown-item" href="#">Đài Loan</a></li>
-              <li><a class="dropdown-item" href="#">Hoa Kỳ</a></li>
-              <li><a class="dropdown-item" href="#">Thái Lan</a></li>
-              <li><a class="dropdown-item" href="#">Brazil</a></li>
-                </ul>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    NĂM PHÁT HÀNH
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">2025</a></li>
-                    <li><a class="dropdown-item" href="#">2024</a></li>
-                    <li><a class="dropdown-item" href="#">2023</a></li>
-                    <li><a class="dropdown-item" href="#">2022</a></li>
-                    <li><a class="dropdown-item" href="#">2021</a></li>
-                    <li><a class="dropdown-item" href="#">2020</a></li>
-                    <li><a class="dropdown-item" href="#">2019</a></li>
-                    <li><a class="dropdown-item" href="#">Trước 2019</a></li>
-                  </ul>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                    👤
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="PhoenixFilm-Login.html">Đăng nhập</a></li>
-                      <li><a class="dropdown-item" href="PhoenixFilm-Signup.html">Đăng kí</a></li>
-                    </ul>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Tìm tên phim"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Tìm kiếm
+          </li>
+
+          <!-- Country Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-globe"></i> QUỐC GIA
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag-usa"></i> Âu Mỹ</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Hàn Quốc</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Việt Nam</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Anh</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Canada</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Nga</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Pháp</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Hồng Kông</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Nhật Bản</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Ý</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Trung Quốc</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Đài Loan</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Thái Lan</a></li>
+              <li><a class="dropdown-item" href="#"><i class="fas fa-flag"></i> Brazil</a></li>
+            </ul>
+          </li>
+
+          <!-- Year Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-calendar"></i> NĂM PHÁT HÀNH
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">2025</a></li>
+              <li><a class="dropdown-item" href="#">2024</a></li>
+              <li><a class="dropdown-item" href="#">2023</a></li>
+              <li><a class="dropdown-item" href="#">2022</a></li>
+              <li><a class="dropdown-item" href="#">2021</a></li>
+              <li><a class="dropdown-item" href="#">2020</a></li>
+              <li><a class="dropdown-item" href="#">2019</a></li>
+              <li><a class="dropdown-item" href="#">Trước 2019</a></li>
+            </ul>
+          </li>
+
+          <!-- User Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="PhoenixFilm-Login.html"><i class="fas fa-sign-in-alt"></i> Đăng
+                  nhập</a></li>
+              <li><a class="dropdown-item" href="PhoenixFilm-Signup.html"><i class="fas fa-user-plus"></i> Đăng ký</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Search Form -->
+        <form class="d-flex" role="search">
+          <div class="input-group">
+            <input class="form-control" type="search" placeholder="Tìm tên phim..." aria-label="Search" />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="fas fa-search"></i>
             </button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
-    </nav>
-    
-    <div class="movie-section">
-    <h2>PHIM ĐỀ CỬ</h2>
-    <div class="movie-carousel">
-      <button class="arrow left">&#10094;</button>
+    </div>
+  </nav>
 
-    <div class="movie-card">
-      <div class="badge">Hoàn tất (16/16) Vietsub</div>
-      <a href="#"><img src="Poster Khi cuộc đời cho bạn quả quýt.png" alt="When Life Gives You Tangerines"></a>
-      <div class="title">Khi Cuộc Đời Cho Bạn Quả Quýt</div>
-      <div class="subtitle">When Life Gives You Tangerines</div>
-    </div>
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container-fluid">
 
-    <div class="movie-card">
-      <div class="badge">Full Ensub</div>
-      <a href="#"><img src="Poster Địa Đạo Mặt Trời Trong Bóng Tối.png" alt="Tunnels: Sun in the Dark"></a>
-      <div class="title">Địa Đạo: Mặt Trời Trong Bóng Tối</div>
-      <div class="subtitle">Tunnels: Sun in the Dark</div>
-    </div>
+      <!-- Featured Movies Section -->
+      <section class="movie-section">
+        <h2 class="section-title">
+          <i class="fas fa-star"></i> PHIM ĐỀ CỬ
+        </h2>
+        <div class="movie-carousel" id="featuredCarousel">
+          <button class="arrow left" onclick="scrollCarousel('featuredCarousel', -1)">
+            <i class="fas fa-chevron-left"></i>
+          </button>
 
-    <div class="movie-card">
-      <div class="badge">Full Lồng Tiếng</div>
-      <a href="#"><img src="Poster Một Bộ Phim Minecraft.png" alt="Một Bộ Phim Minecraft"></a>
-      <div class="title">Một Bộ Phim Minecraft</div>
-      <div class="subtitle">A Minecraft Movie</div>
-    </div>
+          <div class="carousel-container">
+            <div class="movie-card">
+              <div class="badge">Hoàn tất (16/16) Vietsub</div>
+              <a href="#" class="movie-link">
+                <img src="Poster Khi cuộc đời cho bạn quả quýt.png" alt="When Life Gives You Tangerines" loading="lazy">
+                <div class="movie-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </a>
+              <div class="movie-info">
+                <div class="title">Khi Cuộc Đời Cho Bạn Quả Quýt</div>
+                <div class="subtitle">When Life Gives You Tangerines</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 8.5/10
+                </div>
+              </div>
+            </div>
 
-    <div class="movie-card">
-      <div class="badge">Tập 1 Vietsub</div>
-      <a href="#"><img src="Poster Harry Potter Và Hòn Đá Phù Thủy.png" alt="Harry Potter Và Hòn Đá Phù Thủy"></a>
-      <div class="title">Harry Potter Và Hòn Đá Phù Thủy</div>
-      <div class="subtitle">Harry Potter and the Philosopher's Stone</div>
-    </div>
+            <div class="movie-card">
+              <div class="badge">Full Ensub</div>
+              <a href="#" class="movie-link">
+                <img src="Poster Địa Đạo Mặt Trời Trong Bóng Tối.png" alt="Tunnels: Sun in the Dark" loading="lazy">
+                <div class="movie-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </a>
+              <div class="movie-info">
+                <div class="title">Địa Đạo: Mặt Trời Trong Bóng Tối</div>
+                <div class="subtitle">Tunnels: Sun in the Dark</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 7.8/10
+                </div>
+              </div>
+            </div>
 
-    <div class="movie-card">
-      <div class="badge">Full Lồng Tiếng</div>
-      <a href="#"><img src="Poster Đội Trưởng Mỹ Thế Giới Mới.png" alt="Đội Trưởng Mỹ: Thế Giới Mới"></a>
-      <div class="title">Đội trưởng Mỹ: Thế giới mới</div>
-      <div class="subtitle">Captain America: Brave New World</div>
-    </div>
+            <div class="movie-card">
+              <div class="badge">Full Lồng Tiếng</div>
+              <a href="#" class="movie-link">
+                <img src="Poster Một Bộ Phim Minecraft.png" alt="Một Bộ Phim Minecraft" loading="lazy">
+                <div class="movie-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </a>
+              <div class="movie-info">
+                <div class="title">Một Bộ Phim Minecraft</div>
+                <div class="subtitle">A Minecraft Movie</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 9.2/10
+                </div>
+              </div>
+            </div>
 
-    <div class="movie-card">
-      <div class="badge">Full Lồng Tiếng</div>
-      <a href="#"><img src="Poster Thám Tử Lừng Danh Conan Ngôi Sao 5 Cánh 1 Triệu Đô.png" alt="Thám Tử Lừng Danh Conan: Ngôi Sao 5 Cánh 1 Triệu Đô"></a>
-      <div class="title">Thám Tử Lừng Danh Conan: Ngôi Sao 5 Cánh 1 Triệu Đô</div>
-      <div class="subtitle">Detective Conan Movie 27: The Million Dollar Pentagram</div>
-    </div>
+            <div class="movie-card">
+              <div class="badge">Tập 1 Vietsub</div>
+              <a href="#" class="movie-link">
+                <img src="Poster Harry Potter Và Hòn Đá Phù Thủy.png" alt="Harry Potter Và Hòn Đá Phù Thủy"
+                  loading="lazy">
+                <div class="movie-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </a>
+              <div class="movie-info">
+                <div class="title">Harry Potter Và Hòn Đá Phù Thủy</div>
+                <div class="subtitle">Harry Potter and the Philosopher's Stone</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 9.5/10
+                </div>
+              </div>
+            </div>
 
-    <div class="movie-card">
-      <div class="badge">Full Lồng Tiếng</div>
-      <a href="#"><img src="Poster Người Nhện Không Còn Nhà.png" alt="Người Nhện: Không Còn Nhà"></a>
-      <div class="title">Người Nhện: Không Còn Nhà</div>
-      <div class="subtitle">Spiderman: No Way Home</div>
-    </div>
+            <div class="movie-card">
+              <div class="badge">Full Lồng Tiếng</div>
+              <a href="#" class="movie-link">
+                <img src="Poster Đội trưởng Mỹ Thế giới mới.png" alt="Đội Trưởng Mỹ: Thế Giới Mới" loading="lazy">
+                <div class="movie-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </a>
+              <div class="movie-info">
+                <div class="title">Đội trưởng Mỹ: Thế giới mới</div>
+                <div class="subtitle">Captain America: Brave New World</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 8.7/10
+                </div>
+              </div>
+            </div>
 
-    </div>
-    </div>
-    <button class="arrow right">&#10095;</button>
-    </div>
-    </div>
+            <div class="movie-card">
+              <div class="badge">Full Lồng Tiếng</div>
+              <a href="#" class="movie-link">
+                <img src="Poster Thám Tử Lừng Danh Conan Ngôi Sao 5 Cánh 1 Triệu Đô.png"
+                  alt="Thám Tử Lừng Danh Conan: Ngôi Sao 5 Cánh 1 Triệu Đô" loading="lazy">
+                <div class="movie-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </a>
+              <div class="movie-info">
+                <div class="title">Thám Tử Lừng Danh Conan: Ngôi Sao 5 Cánh 1 Triệu Đô</div>
+                <div class="subtitle">Detective Conan Movie 27: The Million Dollar Pentagram</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 8.9/10
+                </div>
+              </div>
+            </div>
 
-    <h2>PHIM MỚI CẬP NHẬT</h2>
-    <div class="container">
-      <div class="movies">
-        <div class="movie-grid">
-          <div class="movie-card">
-            <div class="badge">Tập 16 Vietsub + Thuyết Minh</div>
-            <a href="#"><img src="Poster Tàng Hải Truyện.png" alt="Tàng Hải Truyện"></a>
-            <div class="title">Tàng Hải Truyện</div>
-            <div class="subtitle">Legend Of Zang Hai</div>
+            <div class="movie-card">
+              <div class="badge">Full Lồng Tiếng</div>
+              <a href="#" class="movie-link">
+                <img src="Poster Người Nhện Không Còn Nhà.png" alt="Người Nhện: Không Còn Nhà" loading="lazy">
+                <div class="movie-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+              </a>
+              <div class="movie-info">
+                <div class="title">Người Nhện: Không Còn Nhà</div>
+                <div class="subtitle">Spiderman: No Way Home</div>
+                <div class="rating">
+                  <i class="fas fa-star"></i> 9.1/10
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="movie-card">
-            <div class="badge">Hoàn Tất (3/3) Vietsub</div>
-            <a href="#"><img src="Poster Sherlock Holmes.png" alt="Sherlock Holmes (Phần 1)"></a>
-            <div class="title">Sherlock Holmes (Phần 1)</div>
-            <div class="subtitle">Sherlock Holmes (Season 1)</div>
+
+          <button class="arrow right" onclick="scrollCarousel('featuredCarousel', 1)">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- New Movies and Trending Section -->
+      <section class="content-grid">
+        <div class="row">
+          <!-- New Movies -->
+          <div class="col-lg-9 col-md-8">
+            <div class="movie-section">
+              <h2 class="section-title">
+                <i class="fas fa-clock"></i> PHIM MỚI CẬP NHẬT
+              </h2>
+              <div class="movie-grid">
+                <div class="movie-card">
+                  <div class="badge">Tập 16 Vietsub + Thuyết Minh</div>
+                  <a href="#" class="movie-link">
+                    <img src="Poster Tàng Hải Truyện.png" alt="Tàng Hải Truyện" loading="lazy">
+                    <div class="movie-overlay">
+                      <i class="fas fa-play-circle"></i>
+                    </div>
+                  </a>
+                  <div class="movie-info">
+                    <div class="title">Tàng Hải Truyện</div>
+                    <div class="subtitle">Legend Of Zang Hai</div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i> 8.3/10
+                    </div>
+                  </div>
+                </div>
+
+                <div class="movie-card">
+                  <div class="badge">Hoàn Tất (3/3) Vietsub</div>
+                  <a href="#" class="movie-link">
+                    <img src="Poster Sherlock Holmes.png" alt="Sherlock Holmes (Phần 1)" loading="lazy">
+                    <div class="movie-overlay">
+                      <i class="fas fa-play-circle"></i>
+                    </div>
+                  </a>
+                  <div class="movie-info">
+                    <div class="title">Sherlock Holmes (Phần 1)</div>
+                    <div class="subtitle">Sherlock Holmes (Season 1)</div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i> 9.4/10
+                    </div>
+                  </div>
+                </div>
+
+                <div class="movie-card">
+                  <div class="badge">Full Lồng Tiếng</div>
+                  <a href="#" class="movie-link">
+                    <img src="Poster Trò Chơi Con Mực 2.png" alt="Trò Chơi Con Mực (Phần 2)" loading="lazy">
+                    <div class="movie-overlay">
+                      <i class="fas fa-play-circle"></i>
+                    </div>
+                  </a>
+                  <div class="movie-info">
+                    <div class="title">Trò Chơi Con Mực (Phần 2)</div>
+                    <div class="subtitle">Squid Game (Season 2)</div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i> 9.0/10
+                    </div>
+                  </div>
+                </div>
+
+                <div class="movie-card">
+                  <div class="badge">Full Vietsub</div>
+                  <a href="#" class="movie-link">
+                    <img src="Poster Mufasa Vua Sử Tử.png" alt="Mufasa: Vua Sư Tử" loading="lazy">
+                    <div class="movie-overlay">
+                      <i class="fas fa-play-circle"></i>
+                    </div>
+                  </a>
+                  <div class="movie-info">
+                    <div class="title">Mufasa: Vua Sư Tử</div>
+                    <div class="subtitle">Mufasa: The Lion King</div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i> 8.6/10
+                    </div>
+                  </div>
+                </div>
+
+                <div class="movie-card">
+                  <div class="badge">Full Vietsub</div>
+                  <a href="#" class="movie-link">
+                    <img src="Poster Tiếng Gọi Của Sói.png" alt="Tiếng Gọi Của Sói" loading="lazy">
+                    <div class="movie-overlay">
+                      <i class="fas fa-play-circle"></i>
+                    </div>
+                  </a>
+                  <div class="movie-info">
+                    <div class="title">Tiếng Gọi Của Sói</div>
+                    <div class="subtitle">The Wolf's Call</div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i> 8.1/10
+                    </div>
+                  </div>
+                </div>
+
+                <div class="movie-card">
+                  <div class="badge">Full Vietsub</div>
+                  <a href="#" class="movie-link">
+                    <img src="Poster Con Quỷ Đen.png" alt="Quái Vật Đen" loading="lazy">
+                    <div class="movie-overlay">
+                      <i class="fas fa-play-circle"></i>
+                    </div>
+                  </a>
+                  <div class="movie-info">
+                    <div class="title">Quái Vật Đen</div>
+                    <div class="subtitle">The Black Demon</div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i> 7.5/10
+                    </div>
+                  </div>
+                </div>
+
+                <div class="movie-card">
+                  <div class="badge">Full Vietsub</div>
+                  <a href="#" class="movie-link">
+                    <img src="Poster Venom Vũ Điệu Cuối Cùng.png" alt="Venom: Vũ Điệu Cuối Cùng" loading="lazy">
+                    <div class="movie-overlay">
+                      <i class="fas fa-play-circle"></i>
+                    </div>
+                  </a>
+                  <div class="movie-info">
+                    <div class="title">Venom: Vũ Điệu Cuối Cùng</div>
+                    <div class="subtitle">Venom: The Last Dance</div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i> 8.4/10
+                    </div>
+                  </div>
+                </div>
+
+                <div class="movie-card">
+                  <div class="badge">Full Vietsub</div>
+                  <a href="#" class="movie-link">
+                    <img src="Poster Nhím Sonic 3.png" alt="Nhím Sonic 3" loading="lazy">
+                    <div class="movie-overlay">
+                      <i class="fas fa-play-circle"></i>
+                    </div>
+                  </a>
+                  <div class="movie-info">
+                    <div class="title">Nhím Sonic 3</div>
+                    <div class="subtitle">Sonic The Hedgehog 3</div>
+                    <div class="rating">
+                      <i class="fas fa-star"></i> 8.2/10
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="movie-card">
-            <div class="badge">Full Lồng Tiếng</div>
-            <a href="#"><img src="Poster Trò Chơi Con Mực 2.png" alt="Trò Chơi Con Mực (Phần 2)"></a>
-            <div class="title">Trò Chơi Con Mực (Phần 2)</div>
-            <div class="subtitle">Squid Game (Season 2)</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Mufasa Vua Sử Tử.png" alt="Mufasa: Vua Sư Tử"></a>
-            <div class="title">Mufasa: Vua Sư Tử</div>
-            <div class="subtitle">Mufasa: The Lion King</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Tiếng Gọi Của Sói.png" alt="Tiếng Gọi Của Sói"></a>
-            <div class="title">Tiếng Gọi Của Sói</div>
-            <div class="subtitle">The Wolf's Call</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Con Quỷ Đen.png" alt="Quái Vật Đen"></a>
-            <div class="title">Quái Vật Đen</div>
-            <div class="subtitle">The Black Demon</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Venom Vũ Điệu Cuối Cùng.png" alt="Venom: Vũ Điệu Cuối Cùng"></a>
-            <div class="title">Venom: Vũ Điệu Cuối Cùng</div>
-            <div class="subtitle">Venom: The Last Dance</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Nhím Sonic 3.png" alt="Nhím Sonic 3"></a>
-            <div class="title">Nhím Sonic 3</div>
-            <div class="subtitle">Sonic The Hedgehog 3</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Cuộc Cách Mạng Thời Trang.png" alt="Cuộc Cách Mạng Thời Trang"></a>
-            <div class="title">Cuộc Cách Mạng Thời Trang</div>
-            <div class="subtitle">The New Look</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Người Lính Thứ 12.png" alt="Người Lính Thứ 12"></a>
-            <div class="title">Người Lính Thứ 12</div>
-            <div class="subtitle">The 12th Man</div>
+
+          <!-- Trending Sidebar -->
+          <div class="col-lg-3 col-md-4">
+            <div class="trending-section">
+              <h3 class="trending-title">
+                <i class="fas fa-fire"></i> Trending
+              </h3>
+              <div class="trending-list">
+                <div class="trending-item">
+                  <span class="rank">1</span>
+                  <div class="trending-info">
+                    <div class="trending-name">Thử Thách Thần Tượng</div>
+                    <div class="trending-views">
+                      <i class="fas fa-eye"></i> 603,261 lượt xem
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trending-item">
+                  <span class="rank">2</span>
+                  <div class="trending-info">
+                    <div class="trending-name">Thám Tử Lừng Danh Conan</div>
+                    <div class="trending-views">
+                      <i class="fas fa-eye"></i> 561,735 lượt xem
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trending-item">
+                  <span class="rank">3</span>
+                  <div class="trending-info">
+                    <div class="trending-name">Khi Điện Thoại Đổ Chuông</div>
+                    <div class="trending-views">
+                      <i class="fas fa-eye"></i> 394,077 lượt xem
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trending-item">
+                  <span class="rank">4</span>
+                  <div class="trending-info">
+                    <div class="trending-name">Đảo Hải Tặc</div>
+                    <div class="trending-views">
+                      <i class="fas fa-eye"></i> 260,660 lượt xem
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trending-item">
+                  <span class="rank">5</span>
+                  <div class="trending-info">
+                    <div class="trending-name">Khó Dỗ Dành</div>
+                    <div class="trending-views">
+                      <i class="fas fa-eye"></i> 228,804 lượt xem
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trending-item">
+                  <span class="rank">6</span>
+                  <div class="trending-info">
+                    <div class="trending-name">Cửu Trùng Tử</div>
+                    <div class="trending-views">
+                      <i class="fas fa-eye"></i> 222,703 lượt xem
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trending-item">
+                  <span class="rank">7</span>
+                  <div class="trending-info">
+                    <div class="trending-name">Hoài Ngọc Truyền Kỳ</div>
+                    <div class="trending-views">
+                      <i class="fas fa-eye"></i> 206,685 lượt xem
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trending-item">
+                  <span class="rank">8</span>
+                  <div class="trending-info">
+                    <div class="trending-name">Hạnh Phúc Bị Đánh Cắp</div>
+                    <div class="trending-views">
+                      <i class="fas fa-eye"></i> 205,901 lượt xem
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trending-item">
+                  <span class="rank">9</span>
+                  <div class="trending-info">
+                    <div class="trending-name">Trò Chơi Con Mực (Phần 2)</div>
+                    <div class="trending-views">
+                      <i class="fas fa-eye"></i> 197,020 lượt xem
+                    </div>
+                  </div>
+                </div>
+
+                <div class="trending-item">
+                  <span class="rank">10</span>
+                  <div class="trending-info">
+                    <div class="trending-name">Ngôi Sao Khoai Tây</div>
+                    <div class="trending-views">
+                      <i class="fas fa-eye"></i> 178,493 lượt xem
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-    <div class="trending">
-      <h3>Trending</h3>
-      <ul>
-        <li><span>1.</span>Thử Thách Thần Tượng</li>
-        <li>603261 lượt xem</li>
-        <li><span>2.</span>Thám Tử Lừng Danh Conan</li>
-        <li>561735 lượt xem</li>
-        <li><span>3.</span>Khi Điện Thoại Đổ Chuông</li>
-        <li>394077 lượt xem</li>
-        <li><span>4.</span>Đảo Hải Tặc</li>
-        <li>260660 lượt xem</li>
-        <li><span>5.</span>Khó Dỗ Dành</li>
-        <li>228804 lượt xem</li>
-        <li><span>6.</span>Cửu Trùng Tử</li>
-        <li>222703 lượt xem</li>
-        <li><span>7.</span>Hoài Ngọc Truyền Kỳ</li>
-        <li>206685 lượt xem</li>
-        <li><span>8.</span>Hạnh Phúc Bị Đánh Cắp</li>
-        <li>205901 lượt xem</li>
-        <li><span>9.</span>Trò Chơi Con Mực (Phần 2)</li>
-        <li>197020 lượt xem</li>
-        <li><span>10.</span>Ngôi Sao Khoai Tây</li>
-        <li>178493 lượt xem</li>
-      </ul>
-    </div>
-    
-  </div>
-
-    <h2>PHIM CHIẾU RẠP MỚI</h1>
-<div class="container">
-      <div class="movies">
-        <div class="movie-grid">
-          <div class="movie-card">
-            <div class="badge">Tập 16 Vietsub + Thuyết Minh</div>
-            <a href="#"><img src="Poster Tàng Hải Truyện.png" alt="Tàng Hải Truyện"></a>
-            <div class="title">Tàng Hải Truyện</div>
-            <div class="subtitle">Legend Of Zang Hai</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Hoàn Tất (3/3) Vietsub</div>
-            <a href="#"><img src="Poster Sherlock Holmes.png" alt="Sherlock Holmes (Phần 1)"></a>
-            <div class="title">Sherlock Holmes (Phần 1)</div>
-            <div class="subtitle">Sherlock Holmes (Season 1)</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Lồng Tiếng</div>
-            <a href="#"><img src="Poster Trò Chơi Con Mực 2.png" alt="Trò Chơi Con Mực (Phần 2)"></a>
-            <div class="title">Trò Chơi Con Mực (Phần 2)</div>
-            <div class="subtitle">Squid Game (Season 2)</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Mufasa Vua Sử Tử.png" alt="Mufasa: Vua Sư Tử"></a>
-            <div class="title">Mufasa: Vua Sư Tử</div>
-            <div class="subtitle">Mufasa: The Lion King</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Tiếng Gọi Của Sói.png" alt="Tiếng Gọi Của Sói"></a>
-            <div class="title">Tiếng Gọi Của Sói</div>
-            <div class="subtitle">The Wolf's Call</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Con Quỷ Đen.png" alt="Quái Vật Đen"></a>
-            <div class="title">Quái Vật Đen</div>
-            <div class="subtitle">The Black Demon</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Venom Vũ Điệu Cuối Cùng.png" alt="Venom: Vũ Điệu Cuối Cùng"></a>
-            <div class="title">Venom: Vũ Điệu Cuối Cùng</div>
-            <div class="subtitle">Venom: The Last Dance</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Nhím Sonic 3.png" alt="Nhím Sonic 3"></a>
-            <div class="title">Nhím Sonic 3</div>
-            <div class="subtitle">Sonic The Hedgehog 3</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Cuộc Cách Mạng Thời Trang.png" alt="Cuộc Cách Mạng Thời Trang"></a>
-            <div class="title">Cuộc Cách Mạng Thời Trang</div>
-            <div class="subtitle">The New Look</div>
-          </div>
-          <div class="movie-card">
-            <div class="badge">Full Vietsub</div>
-            <a href="#"><img src="Poster Người Lính Thứ 12.png" alt="Người Lính Thứ 12"></a>
-            <div class="title">Người Lính Thứ 12</div>
-            <div class="subtitle">The 12th Man</div>
-          </div>
-        </div>
-      </div>
-
-    <div class="trending">
-      <h3>Bảng xếp hạng</h3>
-      <ul>
-        <li>Thử Thách Thần Tượng</li>
-        <li>2012</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Thám Tử Lừng Danh Conan</li>
-        <li>1996</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Khi Điện Thoại Đổ Chuông</li>
-        <li>2024</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Đảo Hải Tặc</li>
-        <li>1999</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Khó Dỗ Dành</li>
-        <li>2025</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Cửu Trùng Tử</li>
-        <li>2024</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Hoài Ngọc Truyền Kỳ</li>
-        <li>2008</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Hạnh Phúc Bị Đánh Cắp</li>
-        <li>2024</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Trò Chơi Con Mực (Phần 2)</li>      
-        <li>2024</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Ngôi Sao Khoai Tây</li>
-        <li>2013</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Naruto Shippuden</li>
-        <li>2007</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Chiếc Bật Lửa Và Váy Công Chúa</li>
-        <li>2022</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Trái Tim Chôn Vùi</li>
-        <li>2025</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Ngôi Sao Khoai Tây</li>
-        <li>2023</li>
-        <li>⭐⭐⭐⭐⭐</li>
-        <li>Ngũ Phúc Lâm Môn</li>
-        <li>2025</li>
-        <li>⭐⭐⭐⭐⭐</li>
-      </ul>
+      </section>
     </div>
   </main>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5><i class="fas fa-film"></i> PhoenixFilm</h5>
+          <p>Trang web xem phim trực tuyến hàng đầu Việt Nam với kho phim khổng lồ, chất lượng cao và cập nhật liên tục.
+          </p>
+        </div>
+        <div class="col-md-2">
+          <h6>Phim</h6>
+          <ul class="footer-links">
+            <li><a href="#">Phim Lẻ</a></li>
+            <li><a href="#">Phim Bộ</a></li>
+            <li><a href="#">Phim Chiếu Rạp</a></li>
+            <li><a href="#">Phim Hoạt Hình</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6>Thể Loại</h6>
+          <ul class="footer-links">
+            <li><a href="#">Hành Động</a></li>
+            <li><a href="#">Hài Kịch</a></li>
+            <li><a href="#">Kinh Dị</a></li>
+            <li><a href="#">Lãng Mạn</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6>Quốc Gia</h6>
+          <ul class="footer-links">
+            <li><a href="#">Việt Nam</a></li>
+            <li><a href="#">Hàn Quốc</a></li>
+            <li><a href="#">Âu Mỹ</a></li>
+            <li><a href="#">Trung Quốc</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h6>Hỗ Trợ</h6>
+          <ul class="footer-links">
+            <li><a href="#">Liên Hệ</a></li>
+            <li><a href="#">Báo Lỗi</a></li>
+            <li><a href="#">Điều Khoản</a></li>
+            <li><a href="#">Bảo Mật</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider">
+      <div class="footer-bottom">
+        <p>&copy; 2025 PhoenixFilm. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Carousel functionality
+    function scrollCarousel(carouselId, direction) {
+      const carousel = document.getElementById(carouselId);
+      const container = carousel.querySelector('.carousel-container');
+      const cardWidth = container.querySelector('.movie-card').offsetWidth + 20; // Include margin
+      const scrollAmount = cardWidth * 3 * direction; // Scroll 3 cards at a time
+
+      container.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+
+    // Search functionality
+    document.querySelector('form[role="search"]').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const searchTerm = this.querySelector('input').value.trim();
+      if (searchTerm) {
+        alert('Tìm kiếm: ' + searchTerm);
+        // Here you would typically redirect to search results page
+      }
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Add loading animation for images
+    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+      img.addEventListener('load', function () {
+        this.style.opacity = '1';
+      });
+    });
+  </script>
+</body>
+
 </html>

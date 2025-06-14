@@ -7,9 +7,11 @@ body {
     padding: 50px 20px;
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 .form-container {
     max-width: 550px;
+    max-height: 550px;
     width: 100%;
     background: #000000;
     padding: 30px 40px;
