@@ -25,13 +25,6 @@ body {
     text-align: flex-start;
     margin-bottom: 30px;
 }
-.input-title {
-    font-size: 32px;
-    font-weight: 600;
-    color: white;
-    text-align: flex-start;
-    margin-bottom: 30px;
-}
 .form-floating {
     font-size: 18px;
     color: #ffffffc0;
