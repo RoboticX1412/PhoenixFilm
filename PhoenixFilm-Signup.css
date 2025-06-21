@@ -11,7 +11,7 @@ body {
 }
 .form-container {
     max-width: 550px;
-    max-height: 550px;
+    max-height: 590px;
     width: 100%;
     background: #000000;
     padding: 30px 40px;
@@ -87,4 +87,16 @@ body {
     color: #000000;
     background-color: #c5c5c5;
     border: 5px solid #343434;
+}
+.register-text {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #b0b0b0b9;
+}
+.register-link {
+  color: #006eff;
+  font-weight: bold;
+}
+.register-link:hover {
+  color: #2c7ce4;
 }
