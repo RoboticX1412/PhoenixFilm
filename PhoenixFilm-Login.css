@@ -22,7 +22,7 @@ body {
     font-size: 32px;
     font-weight: 600;
     color: white;
-    text-align: flex-start;
+    text-align: center;
     margin-bottom: 30px;
 }
 .form-floating {
@@ -92,6 +92,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 20px;
   color: #b0b0b0b9;
+  text-align: center;
 }
 .register-link {
   color: #006eff;
